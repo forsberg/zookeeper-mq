@@ -21,8 +21,6 @@ import threading
 import functools
 import time
 
-zookeeper.set_log_stream(sys.stdout)
-
 ZOO_OPEN_ACL_UNSAFE = {"perms":0x1f, "scheme":"world", "id" :"anyone"}
 
 def retry_on(*excepts):
